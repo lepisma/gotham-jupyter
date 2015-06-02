@@ -81,11 +81,11 @@ div.input_area {
   border: 1px solid #091f2e;
 }
 
-div.out_prompt_overlay:hover {background: rgba(240, 240, 240, 0.36);}
+div.out_prompt_overlay:hover {background: rgba(89, 156, 171, 0.36);}
 
 .btn {
-    border-width: 0px;
-    background-color: #245361;
+  border-width: 0px;
+  background-color: #245361;
 }
 .btn:hover {background-color: #599cab;}
 
