@@ -21,8 +21,8 @@ Abhinav Tushar (http://github.com/lepisma)
 }
 
 span.ansiblack {color: #11151c;}
-span.ansiblue {color: #0a3749;}
-span.ansigray {color: #245361;}
+span.ansiblue {color: #245361;}
+span.ansigray {color: #888ca6;}
 span.ansigreen {color: #2aa889;}
 span.ansipurple {color: #4e5166;}
 span.ansired {color: #c23127;}
@@ -92,3 +92,40 @@ div.out_prompt_overlay:hover {background: rgba(240, 240, 240, 0.36);}
 div.cell.selected {border-radius: 0px; border-color: #599cab;}
 body.edit_mode div.cell.selected {border-radius: 0px; border-color: #2aa889 !important;}
 div.text_cell_render, div.output_html {color: #a5a2a2;}
+
+/* Completion */
+
+div.completions {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 0px;
+}
+
+div.completions select {
+  background-color: #091f2e;
+}
+
+div.completions .introspection {
+  color: #99d1ce;
+}
+
+/* Pager */
+
+div#pager {
+  background-color: #091f2e;
+}
+
+div#pager pre {
+  background-color: #11151c;
+  border-color: #2aa889;
+  color: #99d1ce;
+}
+
+div#pager .ui-resizable-handle {
+  background-color: #245361;
+  border-width: 0px;
+}
+
+a.ui-button {
+  background-color: #99d1ce ;
+}
