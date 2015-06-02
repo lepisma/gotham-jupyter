@@ -17,4 +17,4 @@ Copy `custom.css` to `~./ipython/profile_default/static/custom/custom.css`
 
 At present, the CSS is only implemented for the main notebook div, neither for toolbar (which is hidden) nor for IPython landing page. And I don't have much motivation to fix this.
 
-Go to [gotham-contrib](https://github.com/whatyouhide/gotham-contrib) for the scheme for other editors / terminal emulators.
+Go to [gotham-contrib](https://github.com/whatyouhide/gotham-contrib) for other editor / terminal emulator schemes.
