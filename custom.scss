@@ -1,0 +1,308 @@
+/*
+A basic replication of gotham theme for IPython Notebook 3.
+
+Compile this and copy to ~/.ipython/<profile>/static/custom/custom.css
+
+---
+Abhinav Tushar (http://github.com/lepisma)
+*/
+
+// Color palette
+
+$base0: #0c1014; // black
+$base1: #11151c; // brightblack
+$base2: #091f2e; // brightgreen
+$base3: #0a3749; // brightblue
+$base4: #245361; // brightyellow
+$base5: #599cab; // brightcyan
+$base6: #99d1ce; // white
+$base7: #d3ebe9; // brightwhite
+
+$red: #c23127; // red
+$orange: #d26937; // brightred
+$yellow: #edb443; // yellow
+$magenta: #888ca6; // brightmagenta
+$violet: #4e5166; // magenta
+$blue: #195466; // blue
+$cyan: #33859e; // cyan
+$green: #2aa889; // green
+
+
+::selection {
+  background-color: $base4 !important;
+  color: $base7;
+}
+
+::-moz-selection {
+  background-color: $base4 !important;
+  color: $base7;
+}
+
+.CodeMirror-selected {
+  background: $base3 !important;
+}
+
+// Home Page
+body {
+  color: $base5;
+}
+
+a {
+  color: $cyan;
+}
+
+.list_header {
+  background-color: $base1;
+}
+
+.list_container {
+  border: none;
+  >div {
+    border-bottom: 1px solid $base3;
+  }
+}
+
+.list_item:hover {
+  background-color: transparent;
+}
+
+.item_buttons .running-indicator {
+  color: $green;
+}
+
+// Home page tabs
+.nav-tabs {
+  border-bottom: 1px solid $base5;
+  >li.active {
+    >a, >a:hover, >a:focus {
+      background-color: $base4;
+      color: $base6;
+      border-color: $base5;
+      border-bottom-color: $base4;
+    }
+  }
+}
+
+.nav {
+  >li>a {
+    &:hover, &:focus {
+      color: $base4;
+      border-color: transparent;
+      background-color: transparent;
+    }
+  }
+}
+
+// Panels
+.panel {
+  border: none;
+  background-color: transparent;
+}
+
+#running .panel-group .panel .panel-heading {
+  background-color: $base1;
+}
+
+// Header
+#header {
+  background-color: $base1;
+  color: $base7;
+
+  #menus {border: none;}
+
+  .header-bar {display: none;}
+
+  #maintoolbar {display: none;}
+}
+
+.navbar-collapse {
+  background-color: $base1;
+}
+
+// Menus
+.dropdown-menu {
+  background-color: $base1;
+
+  li>a {
+    color: $base4;
+    &:hover, &:focus {
+      color: $base6;
+        background-color: $base4;
+    }
+  }
+
+  .divider {
+    background-color: $base6;
+  }
+}
+
+// Popover
+.popover {
+  background-color: $base1;
+  &.bottom>.arrow:after {
+    border-bottom-color: $base2;
+  }
+}
+
+.popover-title {
+  background-color: $base2;
+  border-bottom-color: $base3;
+}
+
+// Rename box
+span.save_widget span.filename:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: $base6;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+  background-color: $base2;
+}
+
+// Modal
+.modal-content {
+  background-color: $base0;
+  color: $base7;
+}
+
+.modal-header {
+  border-bottom-color: $base5;
+}
+
+.modal-footer {
+  border-top-color: $base5;
+}
+
+pre, .form-control {
+  color: $base6;
+  background-color: $base4;
+  border: 1px solid $base4;
+}
+
+// Text boxes
+#site, #notebook-container, .input_area {
+  background-color: $base0 !important;
+  box-shadow: none;
+}
+
+span.ansiblack {color: $base1;}
+span.ansiblue {color: $base4;}
+span.ansigray {color: $magenta;}
+span.ansigreen {color: $green;}
+span.ansipurple {color: $violet;}
+span.ansired {color: $red;}
+span.ansiyellow {color: $yellow;}
+
+// Code highlighting
+.CodeMirror-code pre {color: $base6;}
+.cm-s-ipython span.cm-variable {color: $base6;}
+.cm-s-ipython span.cm-variable-2 {color: $base6;}
+.cm-s-ipython span.cm-operator {color: $base6;}
+.cm-s-ipython span.cm-number {color: $base6;}
+.cm-s-ipython span.cm-atom {color: $magenta;}
+.cm-s-ipython span.cm-keyword {color: $base4;}
+.cm-s-ipython span.cm-string {color: $green;}
+.cm-s-ipython span.cm-property {color: $green;}
+.cm-s-ipython span.cm-attribute {color: $green;}
+.cm-s-ipython span.cm-builtin {color: $orange;}
+.cm-s-ipython span.cm-def {color: $base4;}
+.cm-s-ipython span.cm-error {color: $red;}
+.cm-s-ipython span.cm-bracket {color: $magenta;}
+.cm-s-ipython span.cm-tag {color: $red;}
+.cm-s-ipython span.cm-link {color: $orange;}
+.cm-s-default .cm-link {color: $green;}
+.cm-s-default .cm-header {color: $base4;}
+.cm-s-default .cm-variable {color: $base6;}
+.cm-s-default .cm-variable-2 {color: $base6;}
+.cm-s-ipython span.cm-comment {
+  font-style: normal;
+  color: $base4;
+}
+div.CodeMirror span.CodeMirror-matchingbracket {
+  background-color: $orange;
+  color: $base0;
+}
+.cm-s-ipython .CodeMirror-gutters {background: $base0; border-right: 0px;}
+.cm-s-ipython .CodeMirror-linenumber {color: $base3;}
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid $base7;
+}
+
+// Markdown things
+.rendered_html {color: $base7 !important;}
+.rendered_html a {color: $orange;}
+.rendered_html a:hover {color: $base6;}
+.rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
+  border: 1px  $base7 solid;
+  color: $base7;
+}
+
+// Cell things
+div.output_area pre {color: $base7;}
+div.input_prompt {color: $base4;}
+div.output_prompt {color: $base5;}
+div.input_area {
+  border-radius: 0px;
+  border: 1px solid $base2;
+}
+
+div.out_prompt_overlay:hover {background: rgba(89, 156, 171, 0.36);}
+
+.btn {
+  border-width: 0px;
+  background-color: $base4;
+  color: $base6;
+
+  &:hover, &:focus {
+    background-color: $base5;
+  }
+
+  &.disabled {
+    background-color: $base1;
+  }
+}
+
+div.cell.selected {border-radius: 0px; border-color: $base5;}
+body.edit_mode div.cell.selected {border-radius: 0px; border-color: $green !important;}
+div.text_cell_render, div.output_html {color: #a5a2a2;}
+
+// Completion
+div.completions {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 0px;
+}
+
+div.completions select {
+  background-color: $base2;
+}
+
+div.completions .introspection {
+  color: $base6;
+}
+
+// Pager
+div#pager {
+  background-color: $base2;
+}
+
+div#pager pre {
+  background-color: $base1;
+  border-color: $green;
+  color: $base6;
+}
+
+div#pager .ui-resizable-handle {
+  background-color: $base4;
+  border-width: 0px;
+}
+
+a.ui-button {
+  background-color: $base6;
+}

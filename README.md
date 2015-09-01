@@ -13,8 +13,7 @@ Gotham IPython is a **dark** color scheme for IPython Notebook 3 (Jupyter*ish* v
 
 ### Installation
 
-Copy `custom.css` to `~./ipython/profile_default/static/custom/custom.css`
-
-At present, the CSS is only implemented for the main notebook div, neither for toolbar (which is hidden) nor for IPython landing page. And I don't have much motivation to fix this.
+1. Compile **scss** → `sass custom.scss custom.css`
+2. Copy output to `~./ipython/<profile_name>/static/custom`
 
 Go to [gotham-contrib](https://github.com/whatyouhide/gotham-contrib) for other editor / terminal emulator schemes.
