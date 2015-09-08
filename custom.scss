@@ -191,6 +191,15 @@ pre, .form-control {
   box-shadow: none;
 }
 
+// Output area
+div.output_stderr {
+  background-color: transparent;
+
+  pre {
+    color: $orange !important;
+  }
+}
+
 span.ansiblack {color: $base1;}
 span.ansiblue {color: $base4;}
 span.ansigray {color: $magenta;}
