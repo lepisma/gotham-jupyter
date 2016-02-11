@@ -1,0 +1,302 @@
+/*
+A basic replication of gotham theme for Jupyter Notebook.
+
+Compile and copy to ~/.jupyter/custom/custom.css
+
+---
+Abhinav Tushar (http://github.com/lepisma)
+*/
+::selection {
+  background-color: #245361 !important;
+  color: #d3ebe9; }
+
+::-moz-selection {
+  background-color: #245361 !important;
+  color: #d3ebe9; }
+
+.CodeMirror-selected {
+  background: #0a3749 !important; }
+
+body {
+  color: #599cab; }
+
+a {
+  color: #33859e; }
+
+.list_header {
+  background-color: #11151c; }
+
+.list_container {
+  border: none; }
+  .list_container > div {
+    border-bottom: 1px solid #0a3749; }
+
+.list_item:hover {
+  background-color: transparent; }
+
+.item_buttons .running-indicator {
+  color: #2aa889; }
+
+.nav-tabs {
+  border-bottom: 1px solid #599cab; }
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #245361;
+    color: #99d1ce;
+    border-color: #599cab;
+    border-bottom-color: #245361; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  color: #245361;
+  border-color: transparent;
+  background-color: transparent; }
+
+.panel {
+  border: none;
+  background-color: transparent; }
+
+#running .panel-group .panel .panel-heading {
+  background-color: #11151c; }
+
+body #header {
+  background-color: #11151c;
+  color: #d3ebe9; }
+  body #header #menus {
+    border: none; }
+  body #header .header-bar {
+    display: none; }
+  body #header #maintoolbar {
+    display: none; }
+
+.navbar-collapse {
+  background-color: #11151c; }
+
+.dropdown-menu {
+  background-color: #11151c; }
+  .dropdown-menu li > a {
+    color: #245361; }
+    .dropdown-menu li > a:hover, .dropdown-menu li > a:focus {
+      color: #99d1ce;
+      background-color: #245361; }
+  .dropdown-menu .divider {
+    background-color: #99d1ce; }
+
+.popover {
+  background-color: #11151c; }
+  .popover.bottom > .arrow:after {
+    border-bottom-color: #091f2e; }
+
+.popover-title {
+  background-color: #091f2e;
+  border-bottom-color: #0a3749; }
+
+span.save_widget span.filename:hover {
+  background-color: transparent; }
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #99d1ce; }
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #091f2e; }
+
+.modal-content {
+  background-color: #0c1014;
+  color: #d3ebe9; }
+
+.modal-header {
+  border-bottom-color: #599cab; }
+
+.modal-footer {
+  border-top-color: #599cab; }
+
+pre, .form-control {
+  color: #99d1ce;
+  background-color: #245361;
+  border: 1px solid #245361; }
+
+#site, #notebook-container, .input_area {
+  background-color: #0c1014 !important;
+  box-shadow: none; }
+
+div.output_stderr {
+  background-color: transparent; }
+  div.output_stderr pre {
+    color: #d26937 !important; }
+
+span.ansiblack {
+  color: #11151c; }
+
+span.ansiblue {
+  color: #245361; }
+
+span.ansigray {
+  color: #888ca6; }
+
+span.ansigreen {
+  color: #2aa889; }
+
+span.ansipurple {
+  color: #4e5166; }
+
+span.ansired {
+  color: #c23127; }
+
+span.ansiyellow {
+  color: #edb443; }
+
+.CodeMirror-code pre {
+  color: #99d1ce; }
+
+.cm-s-ipython span.cm-variable {
+  color: #99d1ce; }
+
+.cm-s-ipython span.cm-variable-2 {
+  color: #99d1ce; }
+
+.cm-s-ipython span.cm-operator {
+  color: #99d1ce; }
+
+.cm-s-ipython span.cm-number {
+  color: #99d1ce; }
+
+.cm-s-ipython span.cm-atom {
+  color: #888ca6; }
+
+.cm-s-ipython span.cm-keyword {
+  color: #245361; }
+
+.cm-s-ipython span.cm-string {
+  color: #2aa889; }
+
+.cm-s-ipython span.cm-property {
+  color: #2aa889; }
+
+.cm-s-ipython span.cm-attribute {
+  color: #2aa889; }
+
+.cm-s-ipython span.cm-builtin {
+  color: #d26937; }
+
+.cm-s-ipython span.cm-def {
+  color: #245361; }
+
+.cm-s-ipython span.cm-error {
+  color: #c23127; }
+
+.cm-s-ipython span.cm-bracket {
+  color: #888ca6; }
+
+.cm-s-ipython span.cm-tag {
+  color: #c23127; }
+
+.cm-s-ipython span.cm-link {
+  color: #d26937; }
+
+.cm-s-default .cm-link {
+  color: #2aa889; }
+
+.cm-s-default .cm-header {
+  color: #245361; }
+
+.cm-s-default .cm-variable {
+  color: #99d1ce; }
+
+.cm-s-default .cm-variable-2 {
+  color: #99d1ce; }
+
+.cm-s-ipython span.cm-comment {
+  font-style: normal;
+  color: #245361; }
+
+div.CodeMirror span.CodeMirror-matchingbracket {
+  background-color: #d26937;
+  color: #0c1014; }
+
+.cm-s-ipython .CodeMirror-gutters {
+  background: #0c1014;
+  border-right: 0px; }
+
+.cm-s-ipython .CodeMirror-linenumber {
+  color: #0a3749; }
+
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid #d3ebe9; }
+
+.rendered_html {
+  color: #d3ebe9 !important; }
+
+.rendered_html a {
+  color: #d26937; }
+
+.rendered_html a:hover {
+  color: #99d1ce; }
+
+.rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
+  border: 1px #d3ebe9 solid;
+  color: #d3ebe9; }
+
+div.output_area pre {
+  color: #d3ebe9; }
+
+div.input_prompt {
+  color: #245361; }
+
+div.output_prompt {
+  color: #599cab; }
+
+div.input_area {
+  border-radius: 0px;
+  border: 1px solid #091f2e; }
+
+div.out_prompt_overlay:hover {
+  background: rgba(89, 156, 171, 0.36); }
+
+.btn {
+  border-width: 0px;
+  background-color: #245361;
+  color: #99d1ce; }
+  .btn:hover, .btn:focus {
+    background-color: #599cab; }
+  .btn.disabled {
+    background-color: #11151c; }
+
+div.cell.selected {
+  border-radius: 0px;
+  border-color: #599cab; }
+
+body.edit_mode div.cell.selected {
+  border-radius: 0px;
+  border-color: #2aa889 !important; }
+
+div.text_cell_render, div.output_html {
+  color: #a5a2a2; }
+
+div.completions {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 0px; }
+
+div.completions select {
+  background-color: #091f2e; }
+
+div.completions .introspection {
+  color: #99d1ce; }
+
+div#pager {
+  background-color: #091f2e; }
+
+div#pager pre {
+  background-color: #11151c;
+  border-color: #2aa889;
+  color: #99d1ce; }
+
+div#pager .ui-resizable-handle {
+  background-color: #245361;
+  border-width: 0px; }
+
+a.ui-button {
+  background-color: #99d1ce; }
+
+/*# sourceMappingURL=custom.css.map */

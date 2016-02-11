@@ -1,7 +1,7 @@
 /*
-A basic replication of gotham theme for IPython Notebook 3.
+A basic replication of gotham theme for Jupyter Notebook.
 
-Compile this and copy to ~/.ipython/<profile>/static/custom/custom.css
+Compile this and copy to ~/.jupyter/custom/custom.css
 
 ---
 Abhinav Tushar (http://github.com/lepisma)
@@ -104,7 +104,7 @@ a {
 }
 
 // Header
-#header {
+body #header {
   background-color: $base1;
   color: $base7;
 
